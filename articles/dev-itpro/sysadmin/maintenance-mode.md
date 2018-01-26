@@ -74,6 +74,9 @@ To turn on maintenance mode in a production environment, you must submit a requ
 
 The Dynamics Service Engineering team will move your system into maintenance mode and work with you to complete the configuration updates. After the team receives a confirmation from you that the updates are complete, they will remove your system from maintenance mode.
 
+## Data entity refresh
+After making configuration key changes, it is mandatory to refresh the data entity list in data management to ensure the configuration key changes are synced to data entities. More on how configuration key changes impact data entities can be read in the below article.
+
 ## Troubleshooting
 Errors can be found in Event viewer.
 
