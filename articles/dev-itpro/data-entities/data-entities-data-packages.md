@@ -287,6 +287,10 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | EnableNewNamingForPackageAPIExport     | A was fix was made to ensure unique names are used for the execution ID using the package API for exports. This will now result in a new naming convention for the execution ID's. If there is a need to revert to the previous naming convention, you can enable this flight. However, by doing this, the issue fixed in the bug 265164 will re-occur. This issue will only occur when calls are made in quick succession so that the time stamps used in the naming convention are the same. |
 | DMFDisableDoubleByteCharacterExport     | A was fix was made to ensure that data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock, if applicable. |
 | DisablePendingRecordFromJobStatus     | A was fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
+| EnableEntityAttributesPascalCase     | This flight can be enabled to support exporting Attribute names in PascalCase.   |
+| DisableExportingContainerFieldIntoFile     | This flight can be disabled to stop exporting container fields to a file when the field size exceeds 32768 bytes.   |
+| EnableEnumSymbolSupportForImportExport     | This flight can be eanbled to export enum name for enums in a composite entity instead of enum value |
+
 
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
