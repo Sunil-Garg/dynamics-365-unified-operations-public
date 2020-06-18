@@ -220,4 +220,8 @@ Finance and Operations create, read, update, and delete (CRUD) business logic on
 
 ## Calculated/unmapped fields
 
-Calculated and unmapped fields in Finance and Operations entities are also available in the corresponding virtual entities in Common Data Service.
+Calculated and unmapped fields in Finance and Operations entities are **not supported** curently for Finance and Operations virtual entities.
+
+## Roll up fields
+
+Roll up fields in Common Data Service are **not supported** currently for Finance and Operations virtual entities.
